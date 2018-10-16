@@ -10,6 +10,15 @@ def submit():
 	v = round(v,3)
 
 	output.config(state="normal")
+
+	outputValue = "Given\nradius:"+str(r)+" units\nheight:"+str(h)+" units\nThe volume is:"+str(v)+" units cubed\n\n"
+
+
+	output.inset(tk.INSERT,outputValue)
+	output.config(state="disabled")
+
+
+
 	output.insert(tk.INSERT,v)
 	output.config(state="disabled")
 
